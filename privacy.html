@@ -4,69 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | PioZard</title>
+    <link rel="icon" href="img/pio.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bluza: #6b82c4;
+            --bluza-ciemna: #4d5f95;
+            --bluza-jasna: #e9eef9;
+            --futro-jasne: #fbf1e8;
+            --tusz: #34394f;
+            --szary: #737a90;
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            background: #fff8ef;
-            color: #3b3a4a;
-            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-            line-height: 1.7;
-            padding: 24px 16px;
+            background: #fff;
+            color: var(--tusz);
+            font-family: "Fredoka", system-ui, sans-serif;
+            line-height: 1.65;
+            padding: 0 16px;
         }
-        .container { max-width: 680px; margin: 0 auto; }
-        h1 { font-size: 26px; margin: 16px 0 4px; }
-        h2 { font-size: 17px; margin: 26px 0 8px; }
-        p, li { font-size: 15px; color: #4d4b60; margin: 6px 0; }
-        ul { margin-left: 22px; }
-        .date { color: #9a98ac; font-size: 13px; }
-        .apps { background: #fff; border: 2px solid #f3e6d6; border-radius: 14px; padding: 10px 18px; }
-        .pkg { color: #9a98ac; font-size: 13px; }
-        a { color: #c4511f; }
-        .back { display: inline-block; margin-top: 8px; font-size: 14px; }
+        .container { max-width: 760px; margin: 0 auto; padding: 24px 0 40px; }
+        a { color: var(--bluza-ciemna); }
+        .clay {
+            border-radius: 28px;
+            box-shadow:
+                inset 0 4px 0 rgba(255, 255, 255, .55),
+                inset 0 -6px 0 rgba(0, 0, 0, .10),
+                0 10px 24px rgba(52, 57, 79, .10);
+        }
+        .back { font-weight: 500; text-decoration: none; }
+        .naglowek { display: flex; align-items: center; gap: 18px; margin: 18px 0 8px; }
+        .naglowek img { width: 96px; height: auto; }
+        h1 { font-size: clamp(30px, 6vw, 42px); font-weight: 700; line-height: 1.1; }
+        .date { color: var(--szary); font-size: 15px; }
+        .skrot { background: var(--bluza-jasna); padding: 20px 24px; margin: 20px 0 8px; }
+        .skrot b { font-weight: 600; }
+        .skrot ul { list-style: none; margin-top: 8px; }
+        .skrot li::before { content: "✓ "; color: var(--bluza-ciemna); font-weight: 700; }
+        h2 { font-size: 21px; font-weight: 600; margin: 30px 0 6px; }
+        p, li { font-size: 16px; color: #4d5266; margin: 6px 0; }
+        ul.lista { margin-left: 22px; }
+        .apps { background: var(--futro-jasne); padding: 14px 24px; margin-top: 10px; }
+        .apps li { list-style: none; }
+        .pkg { color: var(--szary); font-size: 14px; }
+        .kontakt { background: var(--bluza); color: #fff; padding: 22px 24px; margin-top: 30px; }
+        .kontakt h2 { color: #fff; margin-top: 0; }
+        .kontakt p, .kontakt a { color: #fff; }
     </style>
 </head>
 <body>
 <div class="container">
     <a class="back" href="index.html">← PioZard</a>
-    <h1>Privacy Policy</h1>
-    <p class="date">Effective date: October 29, 2026</p>
 
-    <p>This policy explains how the mobile applications published by PioZard on Google Play
-        handle data. We do not ask for, collect or store personal information such as
-        names, email addresses, photos or location. Details for each app are listed below.</p>
+    <div class="naglowek">
+        <img src="img/pio.webp" width="640" height="648" alt="">
+        <div>
+            <h1>Privacy Policy</h1>
+            <p class="date">Effective date: October 29, 2026</p>
+        </div>
+    </div>
+
+    <div class="skrot clay">
+        <b>In short</b>
+        <ul>
+            <li>We never ask for names, emails, photos or location.</li>
+            <li>No accounts, no chat. Game progress stays on the device.</li>
+            <li>Some apps show ads from Google AdMob. In apps for children they are never personalized.</li>
+            <li>Purchases go through Google Play, behind a parental gate.</li>
+        </ul>
+    </div>
 
     <h2>1. Applications covered</h2>
-    <ul class="apps">
-        <li>Zegarek – learn to tell time <span class="pkg">(com.piozard.zegarek)</span>
-            – for children; no ads</li>
+    <p>This policy applies to the following apps published by PioZard on Google Play:</p>
+    <ul class="apps clay">
+        <li><b>Zegarek – learn to tell time</b> <span class="pkg">(com.piozard.zegarek)</span><br>
+            for children · may show ads (child-directed, non-personalized)</li>
     </ul>
 
     <h2>2. What data we collect</h2>
-    <p>Our apps have no accounts, no registration and no chat. We operate no servers,
-        and the apps do not send any data to us. Apps marked “no ads” above contain no
-        third-party SDKs that collect data.</p>
-    <p>The only things saved are game progress (for example stars earned) and whether the
-        full version has been unlocked. They are stored locally on the device and are deleted
-        when the app is uninstalled.</p>
+    <p>We do not ask for, collect or store personal information such as names, email
+        addresses, photos, contacts or location. Our apps have no accounts, no registration
+        and no chat. We operate no servers, and the apps do not send any data to us.</p>
+    <p>Game progress (for example stars earned) and whether the full version has been
+        unlocked are stored locally on the device and are deleted when the app is
+        uninstalled.</p>
 
-    <h2>3. Speech</h2>
-    <p>Apps may read time phrases aloud using the text-to-speech engine installed on the
-        device (or recorded audio included in the app). Text is processed on the device;
-        the app does not record or use the microphone.</p>
+    <h2>3. Advertising</h2>
+    <p>Some apps show ads served by Google AdMob. AdMob may process limited device data
+        (such as the advertising ID, IP address and device type) to serve ads, limit how often
+        they appear and prevent fraud. See
+        <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from apps that use its services</a>.</p>
+    <p>In apps for children, every ad request is marked as child-directed (COPPA) and
+        under the age of consent (GDPR). This means:</p>
+    <ul class="lista">
+        <li>ads are never personalized and there is no remarketing,</li>
+        <li>only ads rated suitable for families (rating G) are allowed,</li>
+        <li>only ad networks certified for the Google Play Families program are used.</li>
+    </ul>
 
-    <h2>4. Advertising</h2>
-    <p>Some apps may show ads served by Google AdMob. Whether an app shows ads is stated
-        in the list in section 1. In apps for children, ad requests are marked as
-        child-directed: ads are never personalized, there is no remarketing, and only
-        family-safe ad content is allowed, as required by the Google Play Families Policy.
-        AdMob may process limited device data to serve and measure ads; see
-        <a href="https://policies.google.com/technologies/partner-sites">how Google uses data</a>.</p>
-
-    <h2>5. Purchases</h2>
-    <p>Some apps offer a one-time purchase that unlocks additional levels. Purchases are
+    <h2>4. Purchases</h2>
+    <p>Some apps offer a one-time purchase that unlocks additional content. Purchases are
         placed behind a parental gate and processed entirely by Google Play. We never receive
         payment details. Google’s privacy policy applies to the payment:
         <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+
+    <h2>5. Speech</h2>
+    <p>Apps may read text aloud using the text-to-speech engine installed on the device or
+        recorded audio included in the app. The apps do not use the microphone.</p>
 
     <h2>6. Children’s privacy</h2>
     <p>Our apps for children comply with the Google Play Families Policy. We do not
@@ -77,13 +123,20 @@
     <p>The apps request no sensitive permissions (no camera, microphone, location or
         contacts). Apps with ads use internet access only to load ads.</p>
 
-    <h2>8. Changes</h2>
+    <h2>8. Your rights</h2>
+    <p>Because we hold no personal data, there is nothing for us to access, correct or delete.
+        You can reset ad data on your device in Android settings (Google → Ads), and remove all
+        app data by uninstalling the app.</p>
+
+    <h2>9. Changes</h2>
     <p>If this policy changes, the new version will be published on this page with an
         updated date.</p>
 
-    <h2>9. Contact</h2>
-    <p>PioZard · Piotr Leszczyński, Poland<br>
-        <a href="mailto:piozard.studio@gmail.com">piozard.studio@gmail.com</a></p>
+    <div class="kontakt clay">
+        <h2>10. Contact</h2>
+        <p>PioZard · Piotr Leszczyński, Poland<br>
+            <a href="mailto:piozard.studio@gmail.com">piozard.studio@gmail.com</a></p>
+    </div>
 </div>
 </body>
 </html>
