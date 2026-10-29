@@ -76,9 +76,16 @@
             box-shadow: 0 6px 16px rgba(52,57,79,.14);
         }
 
-        .o-nas { font-size: 18px; color: var(--szary); max-width: 640px; margin: 8px 0 36px; }
+        .o-nas { font-size: 18px; color: var(--szary); max-width: 640px; margin: 8px 0 20px; }
+        .cechy { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 28px; }
+        .cechy div { display: flex; align-items: center; gap: 12px; background: #f5f6fa; padding: 10px 20px 10px 12px; font-weight: 500; }
+        .cechy img { width: 56px; height: 56px; object-fit: contain; }
+        h2 { display: flex; align-items: center; gap: 12px; }
+        h2 img { width: 64px; height: 64px; object-fit: contain; }
 
         h2 { font-size: 28px; font-weight: 600; margin: 40px 0 6px; }
+        .karta { display: flex; gap: 16px; align-items: center; }
+        .karta img { width: 110px; height: 110px; object-fit: contain; flex: none; }
         .lead { color: var(--szary); margin-bottom: 16px; }
 
         .siatka { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
@@ -114,7 +121,8 @@
         .tech small { color: var(--szary); font-size: 14px; line-height: 1.35; display: block; margin-top: 2px; }
 
         .kontakt { background: var(--bluza); color: #fff; padding: 28px; margin: 44px 0 24px; text-align: center; }
-        .kontakt h2 { margin: 0 0 6px; }
+        .kontakt h2 { margin: 0 0 6px; justify-content: center; }
+        .kontakt img { width: 150px; height: auto; margin-bottom: 6px; }
         .kontakt a { color: #fff; font-weight: 600; }
 
         footer { color: var(--szary); font-size: 14px; text-align: center; margin: 12px 0 32px; }
@@ -126,6 +134,8 @@
             .postac img { max-width: 260px; }
             .dymek { left: 4%; font-size: 16px; }
             .siatka { grid-template-columns: 1fr; }
+            .karta img { width: 80px; height: 80px; }
+            h2 img { width: 52px; height: 52px; }
             .tech { grid-template-columns: 1fr 1fr; }
         }
     </style>
@@ -148,8 +158,12 @@
     <p class="o-nas">PioZard is a one-person studio from Poland, made with a love for learning.
         We build small games that train memory and logic, learning apps created with
         teachers in mind, and a lab where we try new ways to play.</p>
+    <div class="cechy">
+        <div class="clay"><img src="img/logika.webp" alt="">Train logic & memory</div>
+        <div class="clay"><img src="img/pomysl.webp" alt="">Try new ideas</div>
+    </div>
 
-    <h2 id="apps">📚 Learn</h2>
+    <h2 id="apps"><img src="img/learn.webp" alt="">Learn</h2>
     <p class="lead">Learning apps for children and brain games for everyone. Apps made for kids follow simple rules:</p>
     <ul class="zasady">
         <li>No accounts, no chat</li>
@@ -159,26 +173,32 @@
     </ul>
     <div class="siatka">
         <div class="karta learn clay">
-            <h3>🕐 Zegarek</h3>
+            <img src="img/zegarek.webp" alt="">
+            <div>
+            <h3>Zegarek</h3>
             <p>Learn to tell time: turn the minute hand and watch the hour hand follow.
                 Six levels, from full hours to the 24-hour clock.</p>
             <span class="tag">coming soon · Android</span>
+            </div>
         </div>
     </div>
 
-    <h2>🧪 Lab</h2>
+    <h2><img src="img/lab.webp" alt="">Lab</h2>
     <p class="lead">Small games for everyone where we try new ideas and new ways to play.
         Family-friendly, no violence, no adult content.</p>
     <div class="siatka">
         <div class="karta lab clay">
-            <h3>🛹 Skate Finger</h3>
+            <img src="img/skate.webp" alt="">
+            <div>
+            <h3>Skate Finger</h3>
             <p>A fingerboard in your pocket: your fingers become the skater.
                 Ollies, flips and grabs with real finger gestures.</p>
             <span class="tag">in the lab · Android</span>
+            </div>
         </div>
     </div>
 
-    <h2>🛠️ How we build</h2>
+    <h2><img src="img/tech.webp" alt="">How we build</h2>
     <p class="lead">Native mobile apps that run smoothly on older phones and work offline.</p>
     <div class="tech">
         <div class="clay"><b>Flutter</b><small>apps & interfaces</small></div>
@@ -188,6 +208,7 @@
     </div>
 
     <section class="kontakt clay">
+        <img src="img/kontakt.webp" alt="">
         <h2>Let's make something together</h2>
         <p>Teacher, parent or creator with an idea? Write to
             <a href="mailto:piozard.studio@gmail.com">piozard.studio@gmail.com</a></p>
